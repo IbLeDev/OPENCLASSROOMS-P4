@@ -1,0 +1,29 @@
+.bloc-menu_presentation {
+  background-color: $background-gris;
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+
+  .bloc-menu_presentation--titre {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18.75px;
+    text-transform: uppercase;
+  }
+
+  .border-box {
+    position: absolute;
+    top: 23px;
+    border-bottom: 2px solid $tertiaire;
+    width: 40px;
+  }
+
+  .bloc-menu_presentation--plat {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

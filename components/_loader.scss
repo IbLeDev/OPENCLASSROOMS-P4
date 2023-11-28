@@ -1,0 +1,46 @@
+.load {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 450vh;
+  background-color: #fff;
+  z-index: 100;
+  animation: fadeaway 1s 2s linear 1;
+  animation-fill-mode: both;
+  display: flex;
+  justify-content: center;
+
+  .loader {
+    position: sticky;
+    top: 30%;
+    border: 16px solid $primaire;
+    border-top: 16px solid $secondaire;
+    border-radius: 50%;
+    max-width: 120px;
+    max-height: 120px;
+    aspect-ratio: 1;
+    animation: spin 0.75s 5 linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes fadeaway {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+}

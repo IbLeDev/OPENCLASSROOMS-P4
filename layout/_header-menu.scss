@@ -1,0 +1,28 @@
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 63px;
+
+    a {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 30px;
+
+        svg {
+            height: 16px;
+        }
+    }
+
+    img {
+        align-self: center;
+        width: 162px;
+        position: relative;
+        top: 5px;
+    }
+}
