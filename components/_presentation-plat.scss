@@ -1,0 +1,98 @@
+.bloc-menu_presentation--plat {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-start;
+  font-family: $main-font;
+  padding: 10px 0 10px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  .nom {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    align-self: flex-end;
+    align-items: flex-start;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 275px;
+    white-space: nowrap;
+    transition: width 0.5s;
+  }
+
+  .plat-titre {
+    font-weight: 800;
+    font-family: $main-font;
+    margin: 0 0 1px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .plat-description {
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .plat-prix {
+    font-weight: 700;
+    align-self: flex-end;
+    width: 27px;
+    margin: 0 20px;
+    transition: padding 0.5s;
+  }
+
+  .ok {
+    width: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -59px;
+    z-index: 5;
+    background-color: $tertiaire;
+    transition: right 0.5s;
+
+    .background-white {
+      background-color: #fff;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        color: $tertiaire;
+      }
+    }
+  }
+
+  &:active{
+
+    .plat-prix {
+      padding-right: 59px;
+      animation-fill-mode: forwards;
+    }
+
+    .ok {
+      right: 0;
+      animation-fill-mode: forwards;
+    }
+  }
+}

@@ -1,13 +1,20 @@
-@import './base/body-reset';
-@import './base/img-reset';
+@import 'base/body-reset';
+@import 'base/img-reset';
+@import 'base/reset-title';
 
-@import './abstracts/variables';
+@import 'abstracts/variables';
 
-//@import 'components/carte-restaurant';
+
+@import './components/loader';
+@import 'components/carte-restaurant';
 @import 'components/button';
+@import './components/presentation-plat';
 
-@import './layout/header-home';
-@import './layout/presentation';
-@import './layout/fonctionnement';
-//@import './layout/restaurants-home';
-@import './layout/footer-home';
+@import 'layout/header-home';
+@import 'layout/header-menu';
+@import 'layout/bloc-presentation';
+@import 'layout/bloc-fonctionnement';
+@import 'layout/bloc-restaurants';
+@import 'layout/footer';
+@import './layout/bloc-menu_presentation';
+@import './layout/bloc-menu';
