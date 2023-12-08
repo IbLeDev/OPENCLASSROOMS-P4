@@ -1,0 +1,39 @@
+.etape {
+  display: flex;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  position: relative;
+}
+.etape .etape__numero {
+  width: 24px;
+  height: 24px;
+  background-color: #9356dc;
+  border-radius: 15px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -10px;
+  color: #fff;
+  margin-right: 20px;
+}
+.etape .etape__icone {
+  color: #7e7e7e;
+  position: absolute;
+  left: 40px;
+}
+.etape .etape__icone:hover {
+  color: #9356dc;
+}
+.etape .etape__texte {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+}/*# sourceMappingURL=etape.css.map */

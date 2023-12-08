@@ -1,0 +1,36 @@
+.carte {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-gris;
+
+  .carte__image {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    max-height: 383px;
+    margin-bottom: -40px;
+  }
+
+  .carte__titre {
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .carte_menu {
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: $background-gris;
+    padding: 30px 20px 0 20px;
+    position: relative;
+    z-index: 20;
+  }
+
+  .carte__button {
+    margin: 40px 0;
+    align-self: center;
+  }
+}

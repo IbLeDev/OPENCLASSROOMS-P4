@@ -1,89 +1,43 @@
-.bloc-fonctionnement {
+.bloc_fonctionnement {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  font-family: $main-font;
-  width: 100%;
-  padding: 40px 5%;
+  padding: 50px 20px;
 
-  @media (min-width: 1024px) {
-    padding: 0 15%;
-    align-items: flex-start;
-    margin-top: 20px;
-  }
-
-  h2 {
+  .bloc_fonctionnement__titre {
     font-size: 24px;
     margin-bottom: 15px;
+    font-weight: 700;
   }
 
-  ol {
+  .bloc_fonctionnement__etapes {
     list-style: none;
-    width: 100%;
     margin: 0;
     padding: 0;
+    width: 100%;
+
+    .etape {
+      margin-bottom: 25px;
+      margin-left: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: 1024px) {
+        width: 30%;
+      }
+    }
 
     @media (min-width: 1024px) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 75%;
-      margin-left: -25px;
     }
-  
+  }
 
-    li {
-      display: flex;
-      background-color: #F6F6F6;
-      box-shadow: 0 0 10px 1px $background-gris;
-      height: 70px;
-      align-items: center;
-      justify-content: center;
-      width: 80%;
-      margin-bottom: 20px;
-      border-radius: 20px;
-      margin-left: 10px;
-      position: relative;
-
-      @media (min-width: 1024px) {
-        width: 30%;
-      }
-
-      .numero {
-        width: 24px;
-        height: 24px;
-        background-color: #9356dc;
-        border-radius: 15px;
-        position: absolute;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        left: -10px;
-        color: #fff;
-        margin-right: 20px;
-      }
-
-      svg {
-        color: #7e7e7e;
-        position: absolute;
-        left: 40px;
-
-        @media (min-width: 1024px) {
-          left: 20px;
-        }
-
-        &:hover {
-          color: #9356dc;
-        }
-      }
-
-      p {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 18.75px;
-      }
-    }
+  @media (min-width: 1024px) {
+    padding: 50px 12.5%;
   }
 }

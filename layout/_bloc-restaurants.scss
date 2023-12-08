@@ -1,27 +1,20 @@
-.bloc-restaurants {
+.bloc_restaurants {
   background-color: $background-gris;
-  font-family: $main-font;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   padding: 45px 5%;
 
-  .bloc-restaurants_titre {
+  .bloc_restaurants__titre {
     margin-bottom: 15px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
 
-  a {
-    color: #000;
-    text-decoration: none;
-    width: 100%;
-    margin-bottom: 15px;
-
-    @media (min-width: 1024px) {
-      width: 45%;
-    }
-  }
-
-  .cartes-restaurants {
+  .bloc_restaurants__cartes_restaurants {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,11 +23,29 @@
     @media (min-width: 1024px) {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;;
+      justify-content: space-between;
+    }
+  }
+
+  a {
+    width: 100%;
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @media (min-width: 1024px) {
+      width: 45%;
+      margin-bottom: 50px;
+
+      &:nth-child(n + 3) {
+        margin-bottom: 0;
+      }
     }
   }
 
   @media (min-width: 1024px) {
-    padding: 45px 15%;
+    padding: 45px 12.5%;
   }
 }

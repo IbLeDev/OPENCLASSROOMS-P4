@@ -1,9 +1,12 @@
 .menu-header {
+    background-color: #FFF;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
     height: 63px;
+    z-index: 5;
 
     a {
         width: 30px;

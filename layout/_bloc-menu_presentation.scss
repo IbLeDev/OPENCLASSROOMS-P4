@@ -1,10 +1,10 @@
-.bloc-menu_presentation {
+.carte__menu_section {
   background-color: $background-gris;
   width: 100%;
-  margin-top: 40px;
   position: relative;
+  margin-top: 40px;
 
-  .bloc-menu_presentation--titre {
+  .menu_section__titre {
     margin-bottom: 15px;
     font-size: 16px;
     font-weight: 300;
@@ -12,14 +12,14 @@
     text-transform: uppercase;
   }
 
-  .border-box {
+  .menu_section__titre_border-box {
     position: absolute;
     top: 23px;
     border-bottom: 2px solid $tertiaire;
     width: 40px;
   }
 
-  .bloc-menu_presentation--plat {
+  .menu_section__plat {
     margin-bottom: 10px;
 
     &:last-child {

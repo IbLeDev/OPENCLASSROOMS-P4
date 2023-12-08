@@ -1,4 +1,4 @@
-.bloc-menu_presentation--plat {
+.menu_section__plat{
   display: flex;
   flex-direction: row;
   position: relative;
@@ -14,7 +14,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 
-  .nom {
+  .plat__description {
     display: flex;
     flex-direction: column;
     height: 40px;
@@ -27,7 +27,7 @@
     transition: width 0.5s;
   }
 
-  .plat-titre {
+  .plat__titre {
     font-weight: 800;
     font-family: $main-font;
     margin: 0 0 1px 0;
@@ -37,7 +37,7 @@
     width: 100%;
   }
 
-  .plat-description {
+  .plat__accompagnement {
     font-weight: 300;
     font-size: 15px;
     margin: 0;
@@ -47,7 +47,7 @@
     width: 100%;
   }
 
-  .plat-prix {
+  .plat__prix {
     font-weight: 700;
     align-self: flex-end;
     width: 27px;
@@ -55,7 +55,7 @@
     transition: padding 0.5s;
   }
 
-  .ok {
+  .plat__checkbox {
     width: 59px;
     display: flex;
     justify-content: center;
@@ -68,7 +68,7 @@
     background-color: $tertiaire;
     transition: right 0.5s;
 
-    .background-white {
+    .check_box {
       background-color: #fff;
       width: 20px;
       height: 20px;
@@ -77,7 +77,7 @@
       align-items: center;
       justify-content: center;
 
-      svg {
+      .check {
         color: $tertiaire;
       }
     }
@@ -85,12 +85,12 @@
 
   &:hover{
 
-    .plat-prix {
-      padding-right: 59px;
+    .plat__prix {
+      padding-right: 75px;
       animation-fill-mode: forwards;
     }
 
-    .ok {
+    .plat__checkbox {
       right: 0;
       animation-fill-mode: forwards;
     }

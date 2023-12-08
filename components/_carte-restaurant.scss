@@ -1,12 +1,12 @@
-.carte-restaurant {
+.carte_restaurant {
   width: 100%;
   height: 251px;
   position: relative;
-  border-radius: 15px;
+  border-radius: 20px;
   overflow: hidden;
   padding: 0;
 
-  .nouveau {
+  .carte_restaurant__nouveau {
     background-color: #99e2d0;
     position: absolute;
     top: 13px;
@@ -23,23 +23,22 @@
     z-index: 55;
   }
 
-  img {
+  .carte_restaurant__image {
     position: absolute;
     width: 100%;
     bottom: 60px;
     z-index: 1;
   }
 
-  .verticale-img {
+  .carte_restaurant__image--verticale_image {
     bottom: -25px;
   }
 
-  .txt {
+  .carte_restaurant__texte {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
-    font-family: $main-font;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -47,35 +46,36 @@
     z-index: 2;
     padding-left: 10px;
 
-    h3 {
+    .carte_restaurant__titre {
       font-weight: 700;
       font-size: 18px;
     }
 
-    .lieu {
+    .carte_restaurant__localisation {
       margin: 0;
       font-size: 17px;
     }
   }
 
-  .heart {
+  .carte_restaurant__coeur {
     position: absolute;
     z-index: 40;
     right: 20px;
     bottom: 40px;
   }
 
-  .solide {
+  .carte_restaurant__coeur--plein {
     opacity: 0;
     color: transparent;
-    transition-property: opacity;
-    transition-duration: 0.3s;
+    transition-property: all;
+    transition-duration: 0.1s;
     background-image: linear-gradient(to top, #ff79da, #9356dc);
     background-clip: text;
     -webkit-background-clip: text;
 
     &:hover {
       opacity: 1;
+      transform: scale(1.1);
     }
   }
 }

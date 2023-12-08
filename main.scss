@@ -1,3 +1,4 @@
+@import './base/reset';
 @import 'base/body-reset';
 @import 'base/img-reset';
 @import 'base/reset-title';
@@ -6,9 +7,10 @@
 
 
 @import './components/loader';
+@import './components/_etape.scss';
 @import 'components/carte-restaurant';
 @import 'components/button';
-@import './components/presentation-plat';
+@import './components/_presentation-plat';
 
 @import 'layout/header-home';
 @import 'layout/header-menu';
@@ -17,4 +19,4 @@
 @import 'layout/bloc-restaurants';
 @import 'layout/footer';
 @import './layout/bloc-menu_presentation';
-@import './layout/bloc-menu';
+@import './layout/_carte';
