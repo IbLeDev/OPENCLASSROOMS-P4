@@ -1,4 +1,4 @@
-.load {
+.loader {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
 
-  .loader {
+  .loader__spin {
     position: sticky;
     top: 30%;
     border: 16px solid $primaire;
