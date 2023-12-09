@@ -38,19 +38,10 @@ label {
   line-height: 1.1;
 }
 
-/* Balance text wrapping on headings */
-h1,
-h2,
-h3,
-h4 {
-  text-wrap: balance;
-}
-
 /* A elements that don't have a class get default styles */
-a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+a, a:visited, a:active {
   color: currentColor;
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -109,7 +100,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   max-width: 120px;
   max-height: 120px;
-  aspect-ratio: 1;
   animation: spin 0.75s 5 linear;
   animation-fill-mode: both;
 }
@@ -253,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 218px;
   height: 50px;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 25px;
   display: flex;
   align-items: center;
@@ -387,38 +377,11 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 17px;
   top: 14px;
+  text-decoration: none;
+  color: #000;
 }
 .header_menu .header_menu__retour .header_menu__fleche_retour {
   height: 16px;
-}
-
-.menu-header {
-  background-color: #FFF;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-  height: 63px;
-  z-index: 5;
-}
-.menu-header a {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 30px;
-}
-.menu-header a svg {
-  height: 16px;
-}
-.menu-header img {
-  align-self: center;
-  width: 162px;
-  position: relative;
-  top: 5px;
 }
 
 .bloc_presentation {
@@ -677,6 +640,25 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   font-weight: 400;
   position: relative;
+}
+.carte .carte__titre .titre__coeur {
+  position: absolute;
+  z-index: 40;
+  right: 10px;
+  bottom: 0px;
+}
+.carte .carte__titre .titre__coeur--plein {
+  opacity: 0;
+  color: transparent;
+  transition-property: all;
+  transition-duration: 0.1s;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.carte .carte__titre .titre__coeur--plein:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 .carte .carte_menu {
   border-top-right-radius: 40px;
