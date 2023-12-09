@@ -48,7 +48,8 @@ h4 {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
   color: currentColor;
 }
 
@@ -86,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-.load {
+.loader {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -100,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
 }
-.load .loader {
+.loader .loader__spin {
   position: sticky;
   top: 30%;
   border: 16px solid #9356DC;
@@ -592,18 +593,42 @@ h1, h2, h3, h4, h5, h6 {
 .footer .footer__liste .liste__item:last-child {
   margin: 0;
 }
+.footer .footer__liste .liste__item .lien {
+  color: inherit;
+  text-decoration: none;
+}
 .footer .footer__liste .liste__item--avec_icone {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   padding-right: 40px;
+  justify-content: flex-start;
 }
 .footer .footer__liste .liste__item--avec_icone:first-child {
   padding: 0;
 }
+@media (min-width: 1024px) {
+  .footer .footer__liste .liste__item--avec_icone {
+    justify-content: space-between;
+  }
+}
 .footer .footer__liste .liste__item--avec_icone .item__icone {
   margin-right: 8px;
+}
+
+.bloc_localisation {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px 0;
+}
+.bloc_localisation .bloc_localisation__icone {
+  color: rgb(53, 53, 53);
+  height: 16px;
+  width: 12px;
+  margin-right: 10px;
 }
 
 .carte__menu_section {
@@ -651,6 +676,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 28px;
   font-style: italic;
   font-weight: 400;
+  position: relative;
 }
 .carte .carte_menu {
   border-top-right-radius: 40px;
@@ -663,6 +689,4 @@ h1, h2, h3, h4, h5, h6 {
 .carte .carte__button {
   margin: 40px 0;
   align-self: center;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
