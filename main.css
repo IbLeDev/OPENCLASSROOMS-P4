@@ -100,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   max-width: 120px;
   max-height: 120px;
+  aspect-ratio: 1/1;
   animation: spin 0.75s 5 linear;
   animation-fill-mode: both;
 }
