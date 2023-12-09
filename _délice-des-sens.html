@@ -5,158 +5,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://kit.fontawesome.com/78fc514e63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
-    <title>OhMyFood - La palette du goût</title>
+    <title>OhMyFood - Le délice des sens</title>
 </head>
 
 <body>
     <header class="header header_menu">
-        <a href="index.html"><i class="header_menu__fleche fa-solid fa-arrow-left"></i></a>
-        <img src="./images/logo/ohmyfood.png" alt="OhMyFood">
+        <a class="header_menu__retour" href="index.html"><i class="header_menu__fleche fa-solid fa-arrow-left"></i></a>
+        <h1 class="header__bloc_logo"><img class="header__logo" src="./images/logo/ohmyfood.png" alt="OhMyFood"></h1>
     </header>
 
     <main class="carte">
         <img class="carte__image" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
             alt="Un plat du restaurant La palette du gout">
-        <h2 class="carte__titre">La palette du goût <i
-                class="carte_restaurant__coeur carte_restaurant__coeur--creux fa-regular fa-heart"></i>
-            <i class="carte_restaurant__coeur carte_restaurant__coeur--plein fa-solid fa-heart"></i>
-        </h2>
+        <div class="carte_menu">
+            <h2 class="carte__titre">Le délice des sens
+                <i class="titre__coeur titre__coeur--creux fa-regular fa-heart"></i>
+                <i class="titre__coeur titre__coeur--plein fa-solid fa-heart"></i>
+            </h2>
 
-        <section class="carte__section_menu">
-            <h3 class="section_menu__titre">Entrées</h3>
-            <div class="section_menu__titre_border-box"></div>
 
-            <section class="section_menu__plat">
-                <div class="plat__description">
-                    <p class="plat__titre">Fricassée d'escargots</p>
-                    <p class="plat__accompagnement">Au piment d'Espelette</p>
-                </div>
-                <p class="plat__prix">25€</p>
-                <div class="plat__checkbox">
-                    <div class="check_box background-white">
-                        <i class="check fa-solid fa-check"></i>
+            <section class="carte__menu_section">
+                <h3 class="menu_section__titre">Entrées</h3>
+                <div class="menu_section__titre_border-box"></div>
+
+                <section class="menu_section__plat">
+                    <div class="plat__description">
+                        <p class="plat__titre">Fricassée d'escargots</p>
+                        <p class="plat__accompagnement">Au piment d'Espelette</p>
                     </div>
-                </div>
+                    <p class="plat__prix">25€</p>
+                    <div class="plat__checkbox">
+                        <div class="check_box">
+                            <i class="check fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu_section__plat">
+                    <div class="plat__description">
+                        <p class="plat__titre">Fricassée d'escargots</p>
+                        <p class="plat__accompagnement">Au piment d'Espelette</p>
+                    </div>
+                    <p class="plat__prix">25€</p>
+                    <div class="plat__checkbox">
+                        <div class="check_box">
+                            <i class="check fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu_section__plat">
+                    <div class="plat__description">
+                        <p class="plat__titre">Fricassée d'escargots</p>
+                        <p class="plat__accompagnement">Au piment d'Espelette</p>
+                    </div>
+                    <p class="plat__prix">25€</p>
+                    <div class="plat__checkbox">
+                        <div class="check_box">
+                            <i class="check fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </section>
             </section>
 
-            <section class="section_menu__plat">
-                <div class="plat__description">
-                    <p class="plat__titre">Fricassée d'escargots</p>
-                    <p class="plat__accompagnement">Au piment d'Espelette</p>
-                </div>
-                <p class="plat__prix">25€</p>
-                <div class="plat__checkbox">
-                    <div class="check_box background-white">
-                        <i class="check fa-solid fa-check"></i>
+            <section class="carte__menu_section">
+                <h3 class="menu_section__titre">Plats</h3>
+                <div class="menu_section__titre_border-box"></div>
+
+                <section class="menu_section__plat">
+                    <div class="plat__description">
+                        <p class="plat__titre">Fricassée d'escargots</p>
+                        <p class="plat__accompagnement">Au piment d'Espelette</p>
                     </div>
-                </div>
+                    <p class="plat__prix">25€</p>
+                    <div class="plat__checkbox">
+                        <div class="check_box">
+                            <i class="check fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu_section__plat">
+                    <div class="plat__description">
+                        <p class="plat__titre">Fricassée d'escargots</p>
+                        <p class="plat__accompagnement">Au piment d'Espelette</p>
+                    </div>
+                    <p class="plat__prix">25€</p>
+                    <div class="plat__checkbox">
+                        <div class="check_box">
+                            <i class="check fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu_section__plat">
+                    <div class="plat__description">
+                        <p class="plat__titre">Fricassée d'escargots</p>
+                        <p class="plat__accompagnement">Au piment d'Espelette</p>
+                    </div>
+                    <p class="plat__prix">25€</p>
+                    <div class="plat__checkbox">
+                        <div class="check_box">
+                            <i class="check fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </section>
             </section>
 
-            <section class="section_menu__plat">
-                <div class="plat__description">
-                    <p class="plat__titre">Fricassée d'escargots</p>
-                    <p class="plat__accompagnement">Au piment d'Espelette</p>
-                </div>
-                <p class="plat__prix">25€</p>
-                <div class="plat__checkbox">
-                    <div class="check_box background-white">
-                        <i class="check fa-solid fa-check"></i>
+            <section class="carte__menu_section">
+                <h3 class="menu_section__titre">Desserts</h3>
+                <div class="menu_section__titre_border-box"></div>
+
+                <section class="menu_section__plat">
+                    <div class="plat__description">
+                        <p class="plat__titre">Fricassée d'escargots</p>
+                        <p class="plat__accompagnement">Au piment d'Espelette</p>
                     </div>
-                </div>
-            </section>
-        </section>
-
-        <section class="carte__section_menu">
-            <h3 class="section_menu__titre">Plats</h3>
-            <div class="section_menu__titre_border-box"></div>
-
-            <section class="section_menu__plat">
-                <div class="plat__description">
-                    <p class="plat__titre">Fricassée d'escargots</p>
-                    <p class="plat__accompagnement">Au piment d'Espelette</p>
-                </div>
-                <p class="plat__prix">25€</p>
-                <div class="plat__checkbox">
-                    <div class="check_box background-white">
-                        <i class="check fa-solid fa-check"></i>
+                    <p class="plat__prix">25€</p>
+                    <div class="plat__checkbox">
+                        <div class="check_box">
+                            <i class="check fa-solid fa-check"></i>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="section_menu__plat">
-                <div class="plat__description">
-                    <p class="plat__titre">Fricassée d'escargots</p>
-                    <p class="plat__accompagnement">Au piment d'Espelette</p>
-                </div>
-                <p class="plat__prix">25€</p>
-                <div class="plat__checkbox">
-                    <div class="check_box background-white">
-                        <i class="check fa-solid fa-check"></i>
+                <section class="menu_section__plat">
+                    <div class="plat__description">
+                        <p class="plat__titre">Fricassée d'escargots</p>
+                        <p class="plat__accompagnement">Au piment d'Espelette</p>
                     </div>
-                </div>
-            </section>
-
-            <section class="section_menu__plat">
-                <div class="plat__description">
-                    <p class="plat__titre">Fricassée d'escargots</p>
-                    <p class="plat__accompagnement">Au piment d'Espelette</p>
-                </div>
-                <p class="plat__prix">25€</p>
-                <div class="plat__checkbox">
-                    <div class="check_box background-white">
-                        <i class="check fa-solid fa-check"></i>
+                    <p class="plat__prix">25€</p>
+                    <div class="plat__checkbox">
+                        <div class="check_box">
+                            <i class="check fa-solid fa-check"></i>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </section>
+                </section>
 
-        <section class="carte__section_menu">
-            <h3 class="section_menu__titre">Entrées</h3>
-            <div class="section_menu__titre_border-box"></div>
-
-            <section class="section_menu__plat">
-                <div class="plat__description">
-                    <p class="plat__titre">Fricassée d'escargots</p>
-                    <p class="plat__accompagnement">Au piment d'Espelette</p>
-                </div>
-                <p class="plat__prix">25€</p>
-                <div class="plat__checkbox">
-                    <div class="check_box background-white">
-                        <i class="check fa-solid fa-check"></i>
+                <section class="menu_section__plat">
+                    <div class="plat__description">
+                        <p class="plat__titre">Fricassée d'escargots</p>
+                        <p class="plat__accompagnement">Au piment d'Espelette</p>
                     </div>
-                </div>
+                    <p class="plat__prix">25€</p>
+                    <div class="plat__checkbox">
+                        <div class="check_box">
+                            <i class="check fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </section>
             </section>
 
-            <section class="section_menu__plat">
-                <div class="plat__description">
-                    <p class="plat__titre">Fricassée d'escargots</p>
-                    <p class="plat__accompagnement">Au piment d'Espelette</p>
-                </div>
-                <p class="plat__prix">25€</p>
-                <div class="plat__checkbox">
-                    <div class="check_box background-white">
-                        <i class="check fa-solid fa-check"></i>
-                    </div>
-                </div>
-            </section>
+            <button class="carte__button button">Commander</button>
+        </div>
 
-            <section class="section_menu__plat">
-                <div class="plat__description">
-                    <p class="plat__titre">Fricassée d'escargots</p>
-                    <p class="plat__accompagnement">Au piment d'Espelette</p>
-                </div>
-                <p class="plat__prix">25€</p>
-                <div class="plat__checkbox">
-                    <div class="check_box background-white">
-                        <i class="check fa-solid fa-check"></i>
-                    </div>
-                </div>
-            </section>
-        </section>
 
-        <button class="carte__button button">Commander</button>
+
 
     </main>
 
@@ -172,7 +180,7 @@
                 <p>Devenir partenaire</p>
             </li>
             <li class="liste__item">Mentions légales</li>
-            <li class="liste__item">Contact</li>
+            <li class="liste__item"><a class="lien" href="mailto:exemple@exemple.com">Contact</a></li>
         </ul>
     </footer>
 </body>
