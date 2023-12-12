@@ -1,0 +1,30 @@
+.carte__menu_section {
+    background-color: $background-gris;
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  
+    .menu_section__titre {
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 18.75px;
+      text-transform: uppercase;
+    }
+  
+    .menu_section__titre_border-box {
+      position: absolute;
+      top: 23px;
+      border-bottom: 2px solid $tertiaire;
+      width: 40px;
+    }
+  
+    .menu_section__plat {
+      margin-bottom: 10px;
+  
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  

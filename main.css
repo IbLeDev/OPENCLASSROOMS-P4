@@ -510,6 +510,54 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.carte__menu_section {
+  background-color: #F6F6F6;
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+}
+.carte__menu_section .menu_section__titre {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18.75px;
+  text-transform: uppercase;
+}
+.carte__menu_section .menu_section__titre_border-box {
+  position: absolute;
+  top: 23px;
+  border-bottom: 2px solid #99E2D0;
+  width: 40px;
+}
+.carte__menu_section .menu_section__plat {
+  margin-bottom: 10px;
+}
+.carte__menu_section .menu_section__plat:last-child {
+  margin: 0;
+}
+
+@keyframes arrivee {
+  100% {
+    transform: translateX(0);
+  }
+}
+.entrees {
+  transform: translateX(150%);
+  animation: arrivee 1s ease-out forwards;
+}
+
+.plats {
+  transform: translateX(150%);
+  animation: arrivee 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.desserts {
+  transform: translateX(150%);
+  animation: arrivee 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
 .footer {
   background-color: #353535;
   color: #fff;
@@ -686,6 +734,4 @@ h1, h2, h3, h4, h5, h6 {
 .carte .carte__button {
   margin: 40px 0;
   align-self: center;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
