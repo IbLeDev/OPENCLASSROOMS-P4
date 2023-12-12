@@ -724,6 +724,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   width: 100%;
+  overflow: hidden;
 }
 @media (min-width: 1024px) {
   .carte .carte_menu {
@@ -734,6 +735,4 @@ h1, h2, h3, h4, h5, h6 {
 .carte .carte__button {
   margin: 40px 0;
   align-self: center;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
