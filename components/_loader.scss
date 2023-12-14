@@ -8,7 +8,7 @@
   background-color: #fff;
   z-index: 100;
   animation: fadeaway 1s 2s linear 1;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
   display: flex;
   justify-content: center;
 
